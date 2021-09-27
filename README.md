@@ -28,13 +28,13 @@
   * viewModels are reasonable for maintenance our state, we use then because they keep the state when the configuration change happn, for example a screen rotation. 
 
 ### Package structure
-![Package structure](https://github.com/geanbrandao/CleanArchitectureCryptocurrencyWithCompose/blob/../.images/Captura%20de%20tela%202021-09-27%20181349.png?raw=true)
+![Package structure](assets/Captura%20de%20tela%202021-09-27%20181349.png?raw=true)
 
 ### Coin List
-![Coin List](https://github.com/geanbrandao/CleanArchitectureCryptocurrencyWithCompose/blob/../.images/Captura%20de%20tela%202021-09-27%20183120.png?raw=true)
+![Coin List](assets/Captura%20de%20tela%202021-09-27%20183120.png?raw=true)
 
 ### Coin Details
-![Coin Details](https://github.com/geanbrandao/CleanArchitectureCryptocurrencyWithCompose/blob/../.images/Captura%20de%20tela%202021-09-27%20183816.png?raw=true)
+![Coin Details](assets/Captura%20de%20tela%202021-09-27%20183816.png?raw=true)
 
 ### Save Coins
-![Saved Coins](https://github.com/geanbrandao/CleanArchitectureCryptocurrencyWithCompose/blob/../.images/Captura%20de%20tela%202021-09-27%20183713.png?raw=true)
+![Saved Coins](assets/Captura%20de%20tela%202021-09-27%20183713.png?raw=true)
