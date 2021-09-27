@@ -1,5 +1,6 @@
 package com.geanbrandao.compose.cleanarchitecture.cryptocurrency.data.remote.dto
 import com.geanbrandao.compose.cleanarchitecture.cryptocurrency.domain.model.CoinDetail
+import com.geanbrandao.compose.cleanarchitecture.cryptocurrency.domain.model.TeamMember
 import com.google.gson.annotations.SerializedName
 
 data class CoinDetailDto(
@@ -13,7 +14,7 @@ data class CoinDetailDto(
     val isActive: Boolean,
     val type: String,
     val tags: List<Tag>,
-    val team: List<TeamMember>,
+    val team: List<TeamMemberDto>,
     val description: String,
     val message: String,
     @SerializedName("open_source")
@@ -48,5 +49,5 @@ fun CoinDetailDto.toCoinDetails() = CoinDetail(
     rank = rank,
     isActive = isActive,
     tags = tags.map { it.name },
-    team = team,
+    team = team.map { TeamMember(name = it.name, position = it.position) },
 )

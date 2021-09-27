@@ -32,7 +32,7 @@ fun NavGraph(
         composable(
             route = Screen.CoinSavedScreen().route
         ) {
-            CoinSavedScreen()
+            CoinSavedScreen(navController = navController)
         }
     }
 }

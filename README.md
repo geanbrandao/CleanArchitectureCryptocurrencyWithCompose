@@ -3,7 +3,7 @@
 
 - common -> this will contain all stuff the other tree layers have in common
 
-- data -> this will contain the classes corresponding to the dat
+- data -> this will contain the classes corresponding to the data
   - repository - this will only contain the implementation, because, the actually implementation also contain the direct access to our data 
   - remote
     - dto - this is Data Transfer Object, is basically the object the api return

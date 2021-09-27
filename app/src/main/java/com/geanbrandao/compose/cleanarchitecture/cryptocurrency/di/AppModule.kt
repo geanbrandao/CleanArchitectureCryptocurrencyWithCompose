@@ -1,6 +1,7 @@
 package com.geanbrandao.compose.cleanarchitecture.cryptocurrency.di
 
 import com.geanbrandao.compose.cleanarchitecture.cryptocurrency.common.Constants
+import com.geanbrandao.compose.cleanarchitecture.cryptocurrency.data.local.CoinDao
 import com.geanbrandao.compose.cleanarchitecture.cryptocurrency.data.remote.CoinPaprikaApi
 import com.geanbrandao.compose.cleanarchitecture.cryptocurrency.data.repository.CoinRepositoryImpl
 import com.geanbrandao.compose.cleanarchitecture.cryptocurrency.domain.repository.CoinRepository
@@ -28,7 +29,9 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideCoinRepository(api: CoinPaprikaApi): CoinRepository {
-        return CoinRepositoryImpl(api = api)
+    fun provideCoinRepository(api: CoinPaprikaApi, coinDao: CoinDao): CoinRepository {
+        return CoinRepositoryImpl(api = api, coinDao = coinDao)
     }
+
+
 }

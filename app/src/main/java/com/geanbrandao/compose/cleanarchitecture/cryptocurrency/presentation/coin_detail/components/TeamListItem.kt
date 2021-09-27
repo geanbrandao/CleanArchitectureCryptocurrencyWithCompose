@@ -10,7 +10,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.unit.dp
-import com.geanbrandao.compose.cleanarchitecture.cryptocurrency.data.remote.dto.TeamMember
+import com.geanbrandao.compose.cleanarchitecture.cryptocurrency.data.remote.dto.TeamMemberDto
+import com.geanbrandao.compose.cleanarchitecture.cryptocurrency.domain.model.TeamMember
 
 @Composable
 fun TeamListItem(
